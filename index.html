@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Chart Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="chart-container">
+            <div id="canvas-container"> </div>
+        </div>
+        <div class="control">
+            <select name="" class="select" id="chartType">
+                <option value="bar">Bar</option>
+                <option value="line">Line</option>
+                <option value="pie">Pie</option>
+                <option value="doughnut">Doughnut</option>
+                <option value="radar">Bar</option>
+            </select>
+            <input type="text" id="labelInput" class="input" placeholder="Label">
+            <input type="text" id="dataInput" class="input" placeholder="Data">
+            <button class="btn" onclick="addData()">Add Data</button>
+            <button class="btn" onclick="updateChartType()">Change Chart Type </button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
